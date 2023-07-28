@@ -1,5 +1,5 @@
 use rand::Rng;
-use std::{io::stdin, vec};
+use std::io::stdin;
 
 fn to_ascii_art<'a>(input: usize) -> &'a str {
     match input {
@@ -39,7 +39,7 @@ _______
     }
 }
 
-fn rock_paper_scissors(results: &Vec<Vec<&str>>) {
+fn rock_paper_scissors(results: &[&[&str; 3]]) {
     println!("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. :");
 
     let mut user_selection = String::new();
@@ -64,11 +64,11 @@ fn rock_paper_scissors(results: &Vec<Vec<&str>>) {
 }
 
 fn main() {
-    let results: Vec<Vec<&str>> = vec![
-        vec!["It's a draw", "You lose", "You win"],
-        vec!["You win", "It's a draw", "You lose"],
-        vec!["You lose", "You win", "It's a draw"],
+    let results: &[&[&str; 3]] = &[
+        &["It's a draw", "You lose", "You win"],
+        &["You win", "It's a draw", "You lose"],
+        &["You lose", "You win", "It's a draw"],
     ];
 
-    rock_paper_scissors(&results)
+    rock_paper_scissors(results);
 }
