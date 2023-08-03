@@ -1,0 +1,13 @@
+# Rust
+debug/
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Etc.
+.vscode
+.env
+.DS_Store
+api.json
+settings.json
