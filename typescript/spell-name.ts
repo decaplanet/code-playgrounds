@@ -31,10 +31,4 @@ rl.question("\nWhat is your name : ", (nameInput) => {
 	};
 
 	askAgreement();
-
-	myFunc(32, false);
 });
-
-const myFunc = (inputNum: number, inputBool: boolean) => {
-	return [inputNum, inputBool];
-};
