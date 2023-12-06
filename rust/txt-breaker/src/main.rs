@@ -1,8 +1,8 @@
 use std::{env, fs};
-
-use settings::{LINE_LETTER_LIMIT, LINE_WORD_LIMIT};
-
 pub mod settings;
+
+pub const LINE_WORD_LIMIT: usize = 8;
+pub const LINE_LETTER_LIMIT: usize = 70;
 
 fn main() {
     let mut args = env::args();
