@@ -1,7 +1,0 @@
-[package]
-name = "txt-breaker"
-description = "Line breaks for txt files"
-keywords = ["line-breaks", "txt"]
-version = "0.1.0"
-authors = ["decaplanet"]
-edition = "2021"
