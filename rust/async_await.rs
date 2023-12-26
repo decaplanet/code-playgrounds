@@ -1,6 +1,6 @@
 // Add tokio in dependencies.
 // [dependencies]
-// tokio = { version = "1.28.2", features = ["full"] 
+// tokio = { version = "1.28.2", features = ["rt", "rt--thread", "macros"] }
 
 use std::{thread::sleep, time::Duration};
 
